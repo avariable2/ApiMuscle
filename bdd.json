@@ -651,7 +651,7 @@
     "partie": "dos",
     "nom": "tirage à la poulie basse prise serrée, mains en semi-pronation",
     "cible": [
-      "grand dordal",
+      "grand dorsal",
       "trapèze bas",
       "trapèze haut",
       "deltoïdes",
@@ -666,7 +666,7 @@
     "partie": "dos",
     "nom": "tirage à la poulie basse avec une barre large, mains en pronation",
     "cible": [
-      "grand dordal",
+      "grand dorsal",
       "trapèze bas",
       "trapèze haut",
       "deltoïdes",
@@ -989,8 +989,8 @@
       "quadriceps",
       "ischio-jambiers",
       "lombaires",
-      "adducteur",
-      "abducteur",
+      "adducteurs",
+      "abducteurs",
       "abdominaux",
       "fessiers"
     ],
@@ -1005,7 +1005,7 @@
     "cible": [
       "ischio-jambiers",
       "quadriceps",
-      "addcuteur",
+      "adducteurs",
       "lombaires"
     ],
     "equipement": "machine assisté",

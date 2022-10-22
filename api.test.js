@@ -32,3 +32,18 @@ test('Test getParNom() avec \'soulevé de terre\'', () => {
     const objApi = instancierObj()
     expect(objApi.getParNom('soulevé de terre').length).toBe(1)
 })
+
+test('Test getTousEquipement()', () => {
+    const objApi = instancierObj()
+    expect(objApi.getTousEquipement().length).toBe(10)
+})
+
+test('Test getTousLesMuscles()', () => {
+    const objApi = instancierObj()
+    expect(objApi.getTousMuscles().length).toBe(17)
+})
+
+test('Test getTousPartieDuCorps()', () => {
+    const objApi = instancierObj()
+    expect(objApi.getTousPartieDuCorps().length).toBe(8)
+})

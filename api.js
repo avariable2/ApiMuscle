@@ -150,6 +150,51 @@ class Api {
         }
 
     }
+
+    getTousEquipement() {
+        var tabFinal = []
+        for (let i = 0; i < this.bdd.length; i++) {
+            const str = this.bdd[i].equipement
+            if (Array.isArray(str)) {
+                for (let j = 0; j < str.length; j++) {
+                    this.checkSiDataEstDoublon(str[j], tabFinal)
+                }
+            } else {
+                this.checkSiDataEstDoublon(str, tabFinal)
+            }
+        }
+        return tabFinal
+    }
+
+    getTousPartieDuCorps() {
+        var tabFinal = []
+        for (let i = 0; i < this.bdd.length; i++) {
+            this.checkSiDataEstDoublon(this.bdd[i].partie, tabFinal)
+        }
+        return tabFinal
+    }
+
+    getTousMuscles() {
+        var tabFinal = []
+        for (let i = 0; i < this.bdd.length; i++) {
+            const cibleTableauOuVariable = this.bdd[i].cible
+            if (Array.isArray(cibleTableauOuVariable)) {
+                cibleTableauOuVariable.forEach(element => {
+                    this.checkSiDataEstDoublon(element, tabFinal)
+                })
+            } else {
+                this.checkSiDataEstDoublon(cibleTableauOuVariable, tabFinal)
+            }
+        }
+        return tabFinal
+    }
+
+    checkSiDataEstDoublon(data, tableau) {
+        let donnee = data.normalize('NFD').replace(/[\u0300-\u036f]/g, "").toLowerCase()
+        if (!tableau.includes(donnee)) {
+            tableau.push(donnee)
+        }
+    }
 }
 
 module.exports = Api

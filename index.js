@@ -48,4 +48,19 @@ app.get('/get-tous', (req, res) => {
     res.json(reponse)
 })
 
+app.get('/get-tous-equipement', (req, res) => {
+    const reponse = objApi.getTousEquipement()
+    res.json(reponse)
+})
+
+app.get('/get-tous-partie-du-corps', (req, res) => {
+    const reponse = objApi.getTousPartieDuCorps()
+    res.json(reponse)
+})
+
+app.get('/get-tous-muscles', (req, res) => {
+    const reponse = objApi.getTousMuscles()
+    res.json(reponse)
+})
+
 app.listen(PORT, () => console.log('server turn on PORT : ' + PORT))
