@@ -1,6 +1,6 @@
 # ApiMuscle
 
-![Logo ApiMuscle]([https://framasoft.org/nav/img/logo.png](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Emoji_u1f4aa.svg/768px-Emoji_u1f4aa.svg.png))
+![Logo ApiMuscle](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Emoji_u1f4aa.svg/768px-Emoji_u1f4aa.svg.png)
 
 ## À propos du projet
 
