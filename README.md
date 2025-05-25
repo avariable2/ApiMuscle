@@ -2,28 +2,42 @@
 
 ![Logo ApiMuscle](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Emoji_u1f4aa.svg/768px-Emoji_u1f4aa.svg.png)
 
-## À propos du projet
+## About the Project
 
-Cette API a été conçue pour fournir un accès facile et structuré à une vaste collection d'exercices de musculation. Chaque exercice est classé et accessible via différents endpoints, permettant aux utilisateurs de rechercher et de récupérer des informations spécifiques selon leurs besoins.
+This API was designed to provide easy, structured access to a large collection of strength-training exercises. Each exercise is categorized and accessible through various endpoints, allowing users to search for and retrieve specific information according to their needs.
 
-## Fonctionnalités
+---
 
-- **Accès aux exercices par catégorie :** Les utilisateurs peuvent rechercher des exercices en fonction de la catégorie musculaire (par exemple, bras, jambes, dos).
-- **Détails de l'exercice :** Chaque exercice comprend des informations détaillées telles que les instructions, les muscles ciblés, et des conseils pour une exécution correcte.
-- **Filtrage et recherche :** Les utilisateurs peuvent filtrer les exercices en fonction de critères spécifiques, tels que le niveau de difficulté ou le type d'équipement nécessaire.
+## Features
 
-## Utilisation
+- **Category-Based Access**  
+  - Search for exercises by muscle group (e.g., arms, legs, back)
+- **Exercise Details**  
+  - Detailed instructions, targeted muscles, and execution tips for each exercise
+- **Filtering and Search**  
+  - Filter exercises by difficulty level or required equipment
 
-Voici quelques exemples de requêtes que vous pouvez effectuer :
+---
 
-- **Obtenir tous les exercices :**
-```GET /api/exercices```
-- **Rechercher un exercice par nom :**
-```GET /api/exercices?nom=[Nom de l'exercice]```
-- **Filtrer les exercices par catégorie :**
-```GET /api/exercices/categorie/[Nom de la catégorie]```
+## Usage Examples
 
-## Licence
+- **Get all exercises**  
+  ```http
+  GET /api/exercises
 
-Distribué sous la Licence MIT. Voir `LICENSE` pour plus d'informations.
+- **Search by name**
 
+  ```http
+  GET /api/exercises?name=[ExerciseName]
+  ```
+* **Filter by category**
+
+  ```http
+  GET /api/exercises/category/[CategoryName]
+  ```
+
+---
+
+## License
+
+Distributed under the MIT License. See the `LICENSE` file for details.
